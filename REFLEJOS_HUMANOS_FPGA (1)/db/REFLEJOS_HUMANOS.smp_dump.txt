@@ -1,0 +1,12 @@
+
+State Machine - |BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|Y
+Name Y.T8 Y.T7 Y.T6 Y.T5 Y.T4 Y.T3 Y.T2 Y.T1 Y.T0 
+Y.T0 0 0 0 0 0 0 0 0 0 
+Y.T1 0 0 0 0 0 0 0 1 1 
+Y.T2 0 0 0 0 0 0 1 0 1 
+Y.T3 0 0 0 0 0 1 0 0 1 
+Y.T4 0 0 0 0 1 0 0 0 1 
+Y.T5 0 0 0 1 0 0 0 0 1 
+Y.T6 0 0 1 0 0 0 0 0 1 
+Y.T7 0 1 0 0 0 0 0 0 1 
+Y.T8 1 0 0 0 0 0 0 0 1 

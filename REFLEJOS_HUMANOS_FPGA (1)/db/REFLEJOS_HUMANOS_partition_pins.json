@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DEC_ACIERTOS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ACIERTOS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ACIERTOS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ACIERTOS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ACIERTOS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_ACIERTOS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_VELOCIDAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[14]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[13]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[12]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_ACIERTOS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "UNID_VELOCIDAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_FPGA",
+					"strict" : false
+				},
+				{
+					"name" : "START_P",
+					"strict" : false
+				},
+				{
+					"name" : "RESET_P",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BOTONERAS_P[11]",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

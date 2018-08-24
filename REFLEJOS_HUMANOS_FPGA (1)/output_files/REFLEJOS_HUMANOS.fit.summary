@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Aug 23 17:21:57 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : REFLEJOS_HUMANOS
+Top-level Entity Name : BLOQUE_REFLEJOS_HUMANOS
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,739 / 22,320 ( 8 % )
+    Total combinational functions : 952 / 22,320 ( 4 % )
+    Dedicated logic registers : 1,349 / 22,320 ( 6 % )
+Total registers : 1349
+Total pins : 61 / 154 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 8,832 / 608,256 ( 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,55 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+Use IEEE.std_logic_arith.all;
+Use work.mis_componentes.all;
+---------------------------------------------------------------------------------------------------------
+ENTITY REFLEJOS_HUMANOS IS
+PORT(	START: 				In std_logic;
+		BOTONERAS: 			In std_logic_vector(14 downto 0);
+		RESET: 				In std_logic;
+		CLOCK: 				In std_logic;
+		CLOCK_10Hz: 		In std_logic;
+		CLOCK_100Hz:		In std_logic;
+		LEDS: 				Out std_logic_vector(14 downto 0);
+		DEC_ACIERTOS:		Out std_logic_vector(6 downto 0);
+		UNID_ACIERTOS:		Out std_logic_vector(6 downto 0);
+		DEC_VELOCIDAD:		Out std_logic_vector(6 downto 0);
+		UNID_VELOCIDAD:	Out std_logic_vector(6 downto 0));
+END REFLEJOS_HUMANOS; 
+---------------------------------------------------------------------------------------------------------
+ARCHITECTURE estructural OF REFLEJOS_HUMANOS IS
+-------------------------------------------------------------------------------------------------------------
+TYPE ESTADO IS (T0, T1, T2, T3, T4, T5, T6, T7, T8
+SIGNAL Y: ESTADO;)
+
+SIGNAL RESET_CONT_1A15: std_logic;
+SIGNAL EN_CONT_VECES, RESET_CONT_VECES, FIN_VECES: std_logic;
+SIGNAL EN_REG, RESET_REG, WR, EN_RAM, DATA_RAM_CERO: std_logic;
+SIGNAL NUM_1A15, VECES, ADDRESS_CAPT, ADDRESS_RAM, NUM_LED: std_logic_vector(3 downto 0);
+SIGNAL EN_CONT_15ds, RESET_CONT_15ds, IG_15ds: std_logic;
+SIGNAL TIME_LED: std_logic_vector(3  downto 0);
+SIGNAL SUMA_TIME, RESET_TIME: std_logic;
+SIGNAL TIME_TOTAL: std_logic_vector(7 downto 0);
+SIGNAL NUM_BOTONERA, NUM_TECLA: std_logic_vector(3 downto 0);
+SIGNAL EN_REG_BOT, BOTON_PRESS, BOTON_OK: std_logic;
+SIGNAL EN_CONT_ACIERTOS, RESET_CONT_ACIERTOS: std_logic;
+SIGNAL ACIERTOS, DEC_BCD_ACIERT, UNID_BCD_ACIERT: std_logic_vector(3 downto 0);
+SIGNAL EN_PROMEDIO, APAGAR: std_logic;
+SIGNAL VELOCIDAD, DEC_BCD_VELOC, UNID_BCD_VELOC: std_logic_vector(3 downto 0);
+-------------------------------------------------------------------------------------------------------------
+BEGIN
+	MSS_TRANSICIONES: PROCESS(RESET, CLOCK)
+	BEGIN
+		IF RESET='1' THEN Y <= T0;
+		ELSIF (CLOCK'EVENT AND CLOCK='1') THEN
+			CASE Y IS
+				WHEN T0 => IF START='0' THEN Y<=T0; ELSE Y<=T1; END IF;
+				WHEN T1 => IF START='1' THEN Y<=T1; ELSE Y<=T2; END IF;
+				WHEN T2 => IF FIN_VECES='1' THEN Y<=T3;
+							  ELSIF DATA_RAM_CERO='0' THEN Y<=T4;
+							  ELSE Y<=T2; END IF;
+				WHEN T3 => IF START='0' THEN Y<=T3; ELSE Y<=T1; END IF;
+END estructural;
+
+	

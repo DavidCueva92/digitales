@@ -1,0 +1,29 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Use IEEE.std_logic_unsigned.all;
+Use IEEE.std_logic_arith.all;
+
+Entity DECODER_DECIMAL_BINARIO is
+	Port(	Dat_decimal: In std_logic_vector(14 downto 0);
+			Dat_binario: Out std_logic_vector(3 downto 0));
+End DECODER_DECIMAL_BINARIO;
+
+Architecture desarrollo of DECODER_DECIMAL_BINARIO is
+Begin
+	Dat_binario <=	"0001" when Dat_decimal="000000000000001" else
+						"0010" when Dat_decimal="000000000000010" else
+						"0011" when Dat_decimal="000000000000100" else
+						"0100" when Dat_decimal="000000000001000" else
+						"0101" when Dat_decimal="000000000010000" else
+						"0110" when Dat_decimal="000000000100000" else
+						"0111" when Dat_decimal="000000001000000" else
+						"1000" when Dat_decimal="000000010000000" else
+						"1001" when Dat_decimal="000000100000000" else
+						"1010" when Dat_decimal="000001000000000" else
+						"1011" when Dat_decimal="000010000000000" else
+						"1100" when Dat_decimal="000100000000000" else
+						"1101" when Dat_decimal="001000000000000" else
+						"1110" when Dat_decimal="010000000000000" else
+						"1111" when Dat_decimal="100000000000000" else
+						"0000";
+End desarrollo;

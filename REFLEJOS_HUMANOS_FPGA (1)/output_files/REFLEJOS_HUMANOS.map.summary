@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Aug 23 17:21:46 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : REFLEJOS_HUMANOS
+Top-level Entity Name : BLOQUE_REFLEJOS_HUMANOS
+Family : Cyclone IV E
+Total logic elements : 1,780
+    Total combinational functions : 950
+    Dedicated logic registers : 1,349
+Total registers : 1349
+Total pins : 61
+Total virtual pins : 0
+Total memory bits : 8,832
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

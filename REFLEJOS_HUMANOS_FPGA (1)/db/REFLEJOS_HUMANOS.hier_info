@@ -1,0 +1,1117 @@
+|BLOQUE_REFLEJOS_HUMANOS
+DEC_ACIERTOS[0] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[0]
+DEC_ACIERTOS[1] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[1]
+DEC_ACIERTOS[2] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[2]
+DEC_ACIERTOS[3] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[3]
+DEC_ACIERTOS[4] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[4]
+DEC_ACIERTOS[5] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[5]
+DEC_ACIERTOS[6] <= REFLEJOS_HUMANOS:inst.DEC_ACIERTOS[6]
+START_P => REFLEJOS_HUMANOS:inst.START_P
+RESET_P => REFLEJOS_HUMANOS:inst.RESET_P
+CLOCK_FPGA => REFLEJOS_HUMANOS:inst.CLOCK_FPGA
+BOTONERAS_P[0] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[0]
+BOTONERAS_P[1] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[1]
+BOTONERAS_P[2] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[2]
+BOTONERAS_P[3] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[3]
+BOTONERAS_P[4] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[4]
+BOTONERAS_P[5] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[5]
+BOTONERAS_P[6] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[6]
+BOTONERAS_P[7] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[7]
+BOTONERAS_P[8] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[8]
+BOTONERAS_P[9] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[9]
+BOTONERAS_P[10] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[10]
+BOTONERAS_P[11] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[11]
+BOTONERAS_P[12] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[12]
+BOTONERAS_P[13] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[13]
+BOTONERAS_P[14] => REFLEJOS_HUMANOS:inst.BOTONERAS_P[14]
+DEC_VELOCIDAD[0] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[0]
+DEC_VELOCIDAD[1] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[1]
+DEC_VELOCIDAD[2] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[2]
+DEC_VELOCIDAD[3] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[3]
+DEC_VELOCIDAD[4] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[4]
+DEC_VELOCIDAD[5] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[5]
+DEC_VELOCIDAD[6] <= REFLEJOS_HUMANOS:inst.DEC_VELOCIDAD[6]
+LEDS[0] <= REFLEJOS_HUMANOS:inst.LEDS[0]
+LEDS[1] <= REFLEJOS_HUMANOS:inst.LEDS[1]
+LEDS[2] <= REFLEJOS_HUMANOS:inst.LEDS[2]
+LEDS[3] <= REFLEJOS_HUMANOS:inst.LEDS[3]
+LEDS[4] <= REFLEJOS_HUMANOS:inst.LEDS[4]
+LEDS[5] <= REFLEJOS_HUMANOS:inst.LEDS[5]
+LEDS[6] <= REFLEJOS_HUMANOS:inst.LEDS[6]
+LEDS[7] <= REFLEJOS_HUMANOS:inst.LEDS[7]
+LEDS[8] <= REFLEJOS_HUMANOS:inst.LEDS[8]
+LEDS[9] <= REFLEJOS_HUMANOS:inst.LEDS[9]
+LEDS[10] <= REFLEJOS_HUMANOS:inst.LEDS[10]
+LEDS[11] <= REFLEJOS_HUMANOS:inst.LEDS[11]
+LEDS[12] <= REFLEJOS_HUMANOS:inst.LEDS[12]
+LEDS[13] <= REFLEJOS_HUMANOS:inst.LEDS[13]
+LEDS[14] <= REFLEJOS_HUMANOS:inst.LEDS[14]
+UNID_ACIERTOS[0] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[0]
+UNID_ACIERTOS[1] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[1]
+UNID_ACIERTOS[2] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[2]
+UNID_ACIERTOS[3] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[3]
+UNID_ACIERTOS[4] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[4]
+UNID_ACIERTOS[5] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[5]
+UNID_ACIERTOS[6] <= REFLEJOS_HUMANOS:inst.UNID_ACIERTOS[6]
+UNID_VELOCIDAD[0] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[0]
+UNID_VELOCIDAD[1] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[1]
+UNID_VELOCIDAD[2] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[2]
+UNID_VELOCIDAD[3] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[3]
+UNID_VELOCIDAD[4] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[4]
+UNID_VELOCIDAD[5] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[5]
+UNID_VELOCIDAD[6] <= REFLEJOS_HUMANOS:inst.UNID_VELOCIDAD[6]
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst
+START_P => ANTIREBOTE:SIN_RIZADO_START.PB_N
+BOTONERAS_P[0] => ANTIREBOTE:SIN_RIZADO_B1.PB_N
+BOTONERAS_P[1] => ANTIREBOTE:SIN_RIZADO_B2.PB_N
+BOTONERAS_P[2] => ANTIREBOTE:SIN_RIZADO_B3.PB_N
+BOTONERAS_P[3] => ANTIREBOTE:SIN_RIZADO_B4.PB_N
+BOTONERAS_P[4] => ANTIREBOTE:SIN_RIZADO_B5.PB_N
+BOTONERAS_P[5] => ANTIREBOTE:SIN_RIZADO_B6.PB_N
+BOTONERAS_P[6] => ANTIREBOTE:SIN_RIZADO_B7.PB_N
+BOTONERAS_P[7] => ANTIREBOTE:SIN_RIZADO_B8.PB_N
+BOTONERAS_P[8] => ANTIREBOTE:SIN_RIZADO_B9.PB_N
+BOTONERAS_P[9] => ANTIREBOTE:SIN_RIZADO_B10.PB_N
+BOTONERAS_P[10] => ANTIREBOTE:SIN_RIZADO_B11.PB_N
+BOTONERAS_P[11] => ANTIREBOTE:SIN_RIZADO_B12.PB_N
+BOTONERAS_P[12] => ANTIREBOTE:SIN_RIZADO_B13.PB_N
+BOTONERAS_P[13] => ANTIREBOTE:SIN_RIZADO_B14.PB_N
+BOTONERAS_P[14] => ANTIREBOTE:SIN_RIZADO_B15.PB_N
+RESET_P => ANTIREBOTE:SIN_RIZADO_RESET.PB_N
+CLOCK_FPGA => CLOCK_DIV:DIVISOR_FRECUENCIAS.CLOCK_50MHz
+LEDS[0] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal1
+LEDS[1] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal2
+LEDS[2] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal3
+LEDS[3] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal4
+LEDS[4] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal5
+LEDS[5] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal6
+LEDS[6] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal7
+LEDS[7] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal8
+LEDS[8] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal9
+LEDS[9] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal10
+LEDS[10] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal11
+LEDS[11] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal12
+LEDS[12] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal13
+LEDS[13] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal14
+LEDS[14] <= DEMUX_1TO16:DEMULTIPLEXADOR_LEDS.Sal15
+DEC_ACIERTOS[0] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[0]
+DEC_ACIERTOS[1] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[1]
+DEC_ACIERTOS[2] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[2]
+DEC_ACIERTOS[3] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[3]
+DEC_ACIERTOS[4] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[4]
+DEC_ACIERTOS[5] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[5]
+DEC_ACIERTOS[6] <= DECODER_7SEG:ACIERTOS_DECENAS.seg7[6]
+UNID_ACIERTOS[0] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[0]
+UNID_ACIERTOS[1] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[1]
+UNID_ACIERTOS[2] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[2]
+UNID_ACIERTOS[3] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[3]
+UNID_ACIERTOS[4] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[4]
+UNID_ACIERTOS[5] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[5]
+UNID_ACIERTOS[6] <= DECODER_7SEG:ACIERTOS_UNIDADES.seg7[6]
+DEC_VELOCIDAD[0] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[0]
+DEC_VELOCIDAD[1] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[1]
+DEC_VELOCIDAD[2] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[2]
+DEC_VELOCIDAD[3] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[3]
+DEC_VELOCIDAD[4] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[4]
+DEC_VELOCIDAD[5] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[5]
+DEC_VELOCIDAD[6] <= DECODER_7SEG:VELOCIDAD_DECENAS.seg7[6]
+UNID_VELOCIDAD[0] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[0]
+UNID_VELOCIDAD[1] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[1]
+UNID_VELOCIDAD[2] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[2]
+UNID_VELOCIDAD[3] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[3]
+UNID_VELOCIDAD[4] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[4]
+UNID_VELOCIDAD[5] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[5]
+UNID_VELOCIDAD[6] <= DECODER_7SEG:VELOCIDAD_UNIDADES.seg7[6]
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|CLOCK_DIV:DIVISOR_FRECUENCIAS
+CLOCK_50MHz => CLOCK_1Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_10Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_100Hz~reg0.CLK
+CLOCK_50MHz => CLOCK_1KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_10KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_100KHz~reg0.CLK
+CLOCK_50MHz => CLOCK_1MHz~reg0.CLK
+CLOCK_50MHz => clock_1Mhz_int.CLK
+CLOCK_50MHz => count_1Mhz[0].CLK
+CLOCK_50MHz => count_1Mhz[1].CLK
+CLOCK_50MHz => count_1Mhz[2].CLK
+CLOCK_50MHz => count_1Mhz[3].CLK
+CLOCK_50MHz => count_1Mhz[4].CLK
+CLOCK_50MHz => count_1Mhz[5].CLK
+CLOCK_1MHz <= CLOCK_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_100KHz <= CLOCK_100KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_10KHz <= CLOCK_10KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_1KHz <= CLOCK_1KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_100Hz <= CLOCK_100Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_10Hz <= CLOCK_10Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_1Hz <= CLOCK_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_START
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_RESET
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B1
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B2
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B3
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B4
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B5
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B6
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B7
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B8
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B9
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B10
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B11
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B12
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B13
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B14
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|ANTIREBOTE:SIN_RIZADO_B15
+PB_N => SHIFT_PB[3].DATAIN
+CLOCK_100Hz => PB_SIN_REBOTE~reg0.CLK
+CLOCK_100Hz => SHIFT_PB[0].CLK
+CLOCK_100Hz => SHIFT_PB[1].CLK
+CLOCK_100Hz => SHIFT_PB[2].CLK
+CLOCK_100Hz => SHIFT_PB[3].CLK
+PB_SIN_REBOTE <= PB_SIN_REBOTE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|CONTADOR_UP:CONTADOR_UP_NUM1A15
+Data[0] => Q.DATAB
+Data[1] => Q.DATAB
+Data[2] => Q.DATAB
+Data[3] => Q.DATAB
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|REG_SOST:REGISTRO_SOSTENIMIENTO_DIRECCION
+Ent[0] => Q[0]~reg0.DATAIN
+Ent[1] => Q[1]~reg0.DATAIN
+Ent[2] => Q[2]~reg0.DATAIN
+Ent[3] => Q[3]~reg0.DATAIN
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|CONTADOR_UP:CONTADOR_UP_VECES
+Data[0] => Q.DATAB
+Data[1] => Q.DATAB
+Data[2] => Q.DATAB
+Data[3] => Q.DATAB
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DEMUX_1TO16:DEMULTIPLEXADOR_LEDS
+Ent => ~NO_FANOUT~
+Sel[0] => Mux0.IN19
+Sel[0] => Mux1.IN19
+Sel[0] => Mux2.IN19
+Sel[0] => Mux3.IN19
+Sel[0] => Mux4.IN19
+Sel[0] => Mux5.IN19
+Sel[0] => Mux6.IN19
+Sel[0] => Mux7.IN19
+Sel[0] => Mux8.IN19
+Sel[0] => Mux9.IN19
+Sel[0] => Mux10.IN19
+Sel[0] => Mux11.IN19
+Sel[0] => Mux12.IN19
+Sel[0] => Mux13.IN19
+Sel[0] => Mux14.IN19
+Sel[0] => Mux15.IN19
+Sel[1] => Mux0.IN18
+Sel[1] => Mux1.IN18
+Sel[1] => Mux2.IN18
+Sel[1] => Mux3.IN18
+Sel[1] => Mux4.IN18
+Sel[1] => Mux5.IN18
+Sel[1] => Mux6.IN18
+Sel[1] => Mux7.IN18
+Sel[1] => Mux8.IN18
+Sel[1] => Mux9.IN18
+Sel[1] => Mux10.IN18
+Sel[1] => Mux11.IN18
+Sel[1] => Mux12.IN18
+Sel[1] => Mux13.IN18
+Sel[1] => Mux14.IN18
+Sel[1] => Mux15.IN18
+Sel[2] => Mux0.IN17
+Sel[2] => Mux1.IN17
+Sel[2] => Mux2.IN17
+Sel[2] => Mux3.IN17
+Sel[2] => Mux4.IN17
+Sel[2] => Mux5.IN17
+Sel[2] => Mux6.IN17
+Sel[2] => Mux7.IN17
+Sel[2] => Mux8.IN17
+Sel[2] => Mux9.IN17
+Sel[2] => Mux10.IN17
+Sel[2] => Mux11.IN17
+Sel[2] => Mux12.IN17
+Sel[2] => Mux13.IN17
+Sel[2] => Mux14.IN17
+Sel[2] => Mux15.IN17
+Sel[3] => Mux0.IN16
+Sel[3] => Mux1.IN16
+Sel[3] => Mux2.IN16
+Sel[3] => Mux3.IN16
+Sel[3] => Mux4.IN16
+Sel[3] => Mux5.IN16
+Sel[3] => Mux6.IN16
+Sel[3] => Mux7.IN16
+Sel[3] => Mux8.IN16
+Sel[3] => Mux9.IN16
+Sel[3] => Mux10.IN16
+Sel[3] => Mux11.IN16
+Sel[3] => Mux12.IN16
+Sel[3] => Mux13.IN16
+Sel[3] => Mux14.IN16
+Sel[3] => Mux15.IN16
+Sal0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Sal1 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Sal2 <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Sal3 <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Sal4 <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Sal5 <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Sal6 <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Sal7 <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+Sal8 <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+Sal9 <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+Sal10 <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+Sal11 <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+Sal12 <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+Sal13 <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+Sal14 <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+Sal15 <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|CONTADOR_UP:CONTADOR_UP_TIME_LED
+Data[0] => Q.DATAB
+Data[1] => Q.DATAB
+Data[2] => Q.DATAB
+Data[3] => Q.DATAB
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|SUMADOR_RETROALIMENTADO:SUMADOR_TIEMPO
+Dato[0] => Add0.IN8
+Dato[0] => Suma.DATAB
+Dato[1] => Add0.IN7
+Dato[1] => Suma.DATAB
+Dato[2] => Add0.IN6
+Dato[2] => Suma.DATAB
+Dato[3] => Add0.IN5
+Dato[3] => Suma.DATAB
+En => Suma[7]~reg0.ENA
+En => Suma[6]~reg0.ENA
+En => Suma[5]~reg0.ENA
+En => Suma[4]~reg0.ENA
+En => Suma[3]~reg0.ENA
+En => Suma[2]~reg0.ENA
+En => Suma[1]~reg0.ENA
+En => Suma[0]~reg0.ENA
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Ld => Suma.OUTPUTSELECT
+Reset => Suma[0]~reg0.ACLR
+Reset => Suma[1]~reg0.ACLR
+Reset => Suma[2]~reg0.ACLR
+Reset => Suma[3]~reg0.ACLR
+Reset => Suma[4]~reg0.ACLR
+Reset => Suma[5]~reg0.ACLR
+Reset => Suma[6]~reg0.ACLR
+Reset => Suma[7]~reg0.ACLR
+clock => Suma[0]~reg0.CLK
+clock => Suma[1]~reg0.CLK
+clock => Suma[2]~reg0.CLK
+clock => Suma[3]~reg0.CLK
+clock => Suma[4]~reg0.CLK
+clock => Suma[5]~reg0.CLK
+clock => Suma[6]~reg0.CLK
+clock => Suma[7]~reg0.CLK
+Suma[0] <= Suma[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[1] <= Suma[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[2] <= Suma[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[3] <= Suma[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[4] <= Suma[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[5] <= Suma[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[6] <= Suma[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Suma[7] <= Suma[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_DECIMAL_BINARIO:DECIMAL_A_BINARIO
+Dat_decimal[0] => Equal0.IN29
+Dat_decimal[0] => Equal1.IN29
+Dat_decimal[0] => Equal2.IN29
+Dat_decimal[0] => Equal3.IN29
+Dat_decimal[0] => Equal4.IN29
+Dat_decimal[0] => Equal5.IN29
+Dat_decimal[0] => Equal6.IN29
+Dat_decimal[0] => Equal7.IN29
+Dat_decimal[0] => Equal8.IN29
+Dat_decimal[0] => Equal9.IN29
+Dat_decimal[0] => Equal10.IN29
+Dat_decimal[0] => Equal11.IN29
+Dat_decimal[0] => Equal12.IN29
+Dat_decimal[0] => Equal13.IN29
+Dat_decimal[0] => Equal14.IN29
+Dat_decimal[1] => Equal0.IN28
+Dat_decimal[1] => Equal1.IN28
+Dat_decimal[1] => Equal2.IN28
+Dat_decimal[1] => Equal3.IN28
+Dat_decimal[1] => Equal4.IN28
+Dat_decimal[1] => Equal5.IN28
+Dat_decimal[1] => Equal6.IN28
+Dat_decimal[1] => Equal7.IN28
+Dat_decimal[1] => Equal8.IN28
+Dat_decimal[1] => Equal9.IN28
+Dat_decimal[1] => Equal10.IN28
+Dat_decimal[1] => Equal11.IN28
+Dat_decimal[1] => Equal12.IN28
+Dat_decimal[1] => Equal13.IN28
+Dat_decimal[1] => Equal14.IN28
+Dat_decimal[2] => Equal0.IN27
+Dat_decimal[2] => Equal1.IN27
+Dat_decimal[2] => Equal2.IN27
+Dat_decimal[2] => Equal3.IN27
+Dat_decimal[2] => Equal4.IN27
+Dat_decimal[2] => Equal5.IN27
+Dat_decimal[2] => Equal6.IN27
+Dat_decimal[2] => Equal7.IN27
+Dat_decimal[2] => Equal8.IN27
+Dat_decimal[2] => Equal9.IN27
+Dat_decimal[2] => Equal10.IN27
+Dat_decimal[2] => Equal11.IN27
+Dat_decimal[2] => Equal12.IN27
+Dat_decimal[2] => Equal13.IN27
+Dat_decimal[2] => Equal14.IN27
+Dat_decimal[3] => Equal0.IN26
+Dat_decimal[3] => Equal1.IN26
+Dat_decimal[3] => Equal2.IN26
+Dat_decimal[3] => Equal3.IN26
+Dat_decimal[3] => Equal4.IN26
+Dat_decimal[3] => Equal5.IN26
+Dat_decimal[3] => Equal6.IN26
+Dat_decimal[3] => Equal7.IN26
+Dat_decimal[3] => Equal8.IN26
+Dat_decimal[3] => Equal9.IN26
+Dat_decimal[3] => Equal10.IN26
+Dat_decimal[3] => Equal11.IN26
+Dat_decimal[3] => Equal12.IN26
+Dat_decimal[3] => Equal13.IN26
+Dat_decimal[3] => Equal14.IN26
+Dat_decimal[4] => Equal0.IN25
+Dat_decimal[4] => Equal1.IN25
+Dat_decimal[4] => Equal2.IN25
+Dat_decimal[4] => Equal3.IN25
+Dat_decimal[4] => Equal4.IN25
+Dat_decimal[4] => Equal5.IN25
+Dat_decimal[4] => Equal6.IN25
+Dat_decimal[4] => Equal7.IN25
+Dat_decimal[4] => Equal8.IN25
+Dat_decimal[4] => Equal9.IN25
+Dat_decimal[4] => Equal10.IN25
+Dat_decimal[4] => Equal11.IN25
+Dat_decimal[4] => Equal12.IN25
+Dat_decimal[4] => Equal13.IN25
+Dat_decimal[4] => Equal14.IN25
+Dat_decimal[5] => Equal0.IN24
+Dat_decimal[5] => Equal1.IN24
+Dat_decimal[5] => Equal2.IN24
+Dat_decimal[5] => Equal3.IN24
+Dat_decimal[5] => Equal4.IN24
+Dat_decimal[5] => Equal5.IN24
+Dat_decimal[5] => Equal6.IN24
+Dat_decimal[5] => Equal7.IN24
+Dat_decimal[5] => Equal8.IN24
+Dat_decimal[5] => Equal9.IN24
+Dat_decimal[5] => Equal10.IN24
+Dat_decimal[5] => Equal11.IN24
+Dat_decimal[5] => Equal12.IN24
+Dat_decimal[5] => Equal13.IN24
+Dat_decimal[5] => Equal14.IN24
+Dat_decimal[6] => Equal0.IN23
+Dat_decimal[6] => Equal1.IN23
+Dat_decimal[6] => Equal2.IN23
+Dat_decimal[6] => Equal3.IN23
+Dat_decimal[6] => Equal4.IN23
+Dat_decimal[6] => Equal5.IN23
+Dat_decimal[6] => Equal6.IN23
+Dat_decimal[6] => Equal7.IN23
+Dat_decimal[6] => Equal8.IN23
+Dat_decimal[6] => Equal9.IN23
+Dat_decimal[6] => Equal10.IN23
+Dat_decimal[6] => Equal11.IN23
+Dat_decimal[6] => Equal12.IN23
+Dat_decimal[6] => Equal13.IN23
+Dat_decimal[6] => Equal14.IN23
+Dat_decimal[7] => Equal0.IN22
+Dat_decimal[7] => Equal1.IN22
+Dat_decimal[7] => Equal2.IN22
+Dat_decimal[7] => Equal3.IN22
+Dat_decimal[7] => Equal4.IN22
+Dat_decimal[7] => Equal5.IN22
+Dat_decimal[7] => Equal6.IN22
+Dat_decimal[7] => Equal7.IN22
+Dat_decimal[7] => Equal8.IN22
+Dat_decimal[7] => Equal9.IN22
+Dat_decimal[7] => Equal10.IN22
+Dat_decimal[7] => Equal11.IN22
+Dat_decimal[7] => Equal12.IN22
+Dat_decimal[7] => Equal13.IN22
+Dat_decimal[7] => Equal14.IN22
+Dat_decimal[8] => Equal0.IN21
+Dat_decimal[8] => Equal1.IN21
+Dat_decimal[8] => Equal2.IN21
+Dat_decimal[8] => Equal3.IN21
+Dat_decimal[8] => Equal4.IN21
+Dat_decimal[8] => Equal5.IN21
+Dat_decimal[8] => Equal6.IN21
+Dat_decimal[8] => Equal7.IN21
+Dat_decimal[8] => Equal8.IN21
+Dat_decimal[8] => Equal9.IN21
+Dat_decimal[8] => Equal10.IN21
+Dat_decimal[8] => Equal11.IN21
+Dat_decimal[8] => Equal12.IN21
+Dat_decimal[8] => Equal13.IN21
+Dat_decimal[8] => Equal14.IN21
+Dat_decimal[9] => Equal0.IN20
+Dat_decimal[9] => Equal1.IN20
+Dat_decimal[9] => Equal2.IN20
+Dat_decimal[9] => Equal3.IN20
+Dat_decimal[9] => Equal4.IN20
+Dat_decimal[9] => Equal5.IN20
+Dat_decimal[9] => Equal6.IN20
+Dat_decimal[9] => Equal7.IN20
+Dat_decimal[9] => Equal8.IN20
+Dat_decimal[9] => Equal9.IN20
+Dat_decimal[9] => Equal10.IN20
+Dat_decimal[9] => Equal11.IN20
+Dat_decimal[9] => Equal12.IN20
+Dat_decimal[9] => Equal13.IN20
+Dat_decimal[9] => Equal14.IN20
+Dat_decimal[10] => Equal0.IN19
+Dat_decimal[10] => Equal1.IN19
+Dat_decimal[10] => Equal2.IN19
+Dat_decimal[10] => Equal3.IN19
+Dat_decimal[10] => Equal4.IN19
+Dat_decimal[10] => Equal5.IN19
+Dat_decimal[10] => Equal6.IN19
+Dat_decimal[10] => Equal7.IN19
+Dat_decimal[10] => Equal8.IN19
+Dat_decimal[10] => Equal9.IN19
+Dat_decimal[10] => Equal10.IN19
+Dat_decimal[10] => Equal11.IN19
+Dat_decimal[10] => Equal12.IN19
+Dat_decimal[10] => Equal13.IN19
+Dat_decimal[10] => Equal14.IN19
+Dat_decimal[11] => Equal0.IN18
+Dat_decimal[11] => Equal1.IN18
+Dat_decimal[11] => Equal2.IN18
+Dat_decimal[11] => Equal3.IN18
+Dat_decimal[11] => Equal4.IN18
+Dat_decimal[11] => Equal5.IN18
+Dat_decimal[11] => Equal6.IN18
+Dat_decimal[11] => Equal7.IN18
+Dat_decimal[11] => Equal8.IN18
+Dat_decimal[11] => Equal9.IN18
+Dat_decimal[11] => Equal10.IN18
+Dat_decimal[11] => Equal11.IN18
+Dat_decimal[11] => Equal12.IN18
+Dat_decimal[11] => Equal13.IN18
+Dat_decimal[11] => Equal14.IN18
+Dat_decimal[12] => Equal0.IN17
+Dat_decimal[12] => Equal1.IN17
+Dat_decimal[12] => Equal2.IN17
+Dat_decimal[12] => Equal3.IN17
+Dat_decimal[12] => Equal4.IN17
+Dat_decimal[12] => Equal5.IN17
+Dat_decimal[12] => Equal6.IN17
+Dat_decimal[12] => Equal7.IN17
+Dat_decimal[12] => Equal8.IN17
+Dat_decimal[12] => Equal9.IN17
+Dat_decimal[12] => Equal10.IN17
+Dat_decimal[12] => Equal11.IN17
+Dat_decimal[12] => Equal12.IN17
+Dat_decimal[12] => Equal13.IN17
+Dat_decimal[12] => Equal14.IN17
+Dat_decimal[13] => Equal0.IN16
+Dat_decimal[13] => Equal1.IN16
+Dat_decimal[13] => Equal2.IN16
+Dat_decimal[13] => Equal3.IN16
+Dat_decimal[13] => Equal4.IN16
+Dat_decimal[13] => Equal5.IN16
+Dat_decimal[13] => Equal6.IN16
+Dat_decimal[13] => Equal7.IN16
+Dat_decimal[13] => Equal8.IN16
+Dat_decimal[13] => Equal9.IN16
+Dat_decimal[13] => Equal10.IN16
+Dat_decimal[13] => Equal11.IN16
+Dat_decimal[13] => Equal12.IN16
+Dat_decimal[13] => Equal13.IN16
+Dat_decimal[13] => Equal14.IN16
+Dat_decimal[14] => Equal0.IN15
+Dat_decimal[14] => Equal1.IN15
+Dat_decimal[14] => Equal2.IN15
+Dat_decimal[14] => Equal3.IN15
+Dat_decimal[14] => Equal4.IN15
+Dat_decimal[14] => Equal5.IN15
+Dat_decimal[14] => Equal6.IN15
+Dat_decimal[14] => Equal7.IN15
+Dat_decimal[14] => Equal8.IN15
+Dat_decimal[14] => Equal9.IN15
+Dat_decimal[14] => Equal10.IN15
+Dat_decimal[14] => Equal11.IN15
+Dat_decimal[14] => Equal12.IN15
+Dat_decimal[14] => Equal13.IN15
+Dat_decimal[14] => Equal14.IN15
+Dat_binario[0] <= Dat_binario.DB_MAX_OUTPUT_PORT_TYPE
+Dat_binario[1] <= Dat_binario.DB_MAX_OUTPUT_PORT_TYPE
+Dat_binario[2] <= Dat_binario.DB_MAX_OUTPUT_PORT_TYPE
+Dat_binario[3] <= Dat_binario.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|REG_SOST:REGISTRO_SOSTENIMIENTO_BOTONERA
+Ent[0] => Q[0]~reg0.DATAIN
+Ent[1] => Q[1]~reg0.DATAIN
+Ent[2] => Q[2]~reg0.DATAIN
+Ent[3] => Q[3]~reg0.DATAIN
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|COMPARADOR:COMPARADOR_TECLA
+A[0] => LessThan0.IN4
+A[0] => LessThan1.IN4
+A[1] => LessThan0.IN3
+A[1] => LessThan1.IN3
+A[2] => LessThan0.IN2
+A[2] => LessThan1.IN2
+A[3] => LessThan0.IN1
+A[3] => LessThan1.IN1
+B[0] => LessThan0.IN8
+B[0] => LessThan1.IN8
+B[1] => LessThan0.IN7
+B[1] => LessThan1.IN7
+B[2] => LessThan0.IN6
+B[2] => LessThan1.IN6
+B[3] => LessThan0.IN5
+B[3] => LessThan1.IN5
+AmayorB <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+AigualB <= AigualB.DB_MAX_OUTPUT_PORT_TYPE
+AmenorB <= AmenorB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|CONTADOR_UP:CONTADOR_UP_ACIERTOS
+Data[0] => Q.DATAB
+Data[1] => Q.DATAB
+Data[2] => Q.DATAB
+Data[3] => Q.DATAB
+En => Q[3]~reg0.ENA
+En => Q[2]~reg0.ENA
+En => Q[1]~reg0.ENA
+En => Q[0]~reg0.ENA
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Ld => Q.OUTPUTSELECT
+Reset => Q[0]~reg0.ACLR
+Reset => Q[1]~reg0.ACLR
+Reset => Q[2]~reg0.ACLR
+Reset => Q[3]~reg0.ACLR
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|PROMEDIO:PROMEDIADOR
+Suma_Xn[0] => Sumatoria[0].DATAIN
+Suma_Xn[1] => Sumatoria[1].DATAIN
+Suma_Xn[2] => Sumatoria[2].DATAIN
+Suma_Xn[3] => Sumatoria[3].DATAIN
+Suma_Xn[4] => Sumatoria[4].DATAIN
+Suma_Xn[5] => Sumatoria[5].DATAIN
+Suma_Xn[6] => Sumatoria[6].DATAIN
+Suma_Xn[7] => Sumatoria[7].DATAIN
+n[0] => Equal0.IN7
+n[0] => Num_muestras[0].DATAIN
+n[1] => Equal0.IN6
+n[1] => Num_muestras[1].DATAIN
+n[2] => Equal0.IN5
+n[2] => Num_muestras[2].DATAIN
+n[3] => Equal0.IN4
+n[3] => Num_muestras[3].DATAIN
+En => process_0.IN1
+Media[0] <= Media.DB_MAX_OUTPUT_PORT_TYPE
+Media[1] <= Media.DB_MAX_OUTPUT_PORT_TYPE
+Media[2] <= Media.DB_MAX_OUTPUT_PORT_TYPE
+Media[3] <= Media.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_BINARIO_BCD:BINARIO_A_BCD_1
+Dat_binario[0] => Unidades[0].DATAIN
+Dat_binario[1] => Mux0.IN10
+Dat_binario[1] => Mux1.IN10
+Dat_binario[1] => Mux2.IN10
+Dat_binario[1] => Mux3.IN10
+Dat_binario[2] => Mux0.IN9
+Dat_binario[2] => Mux1.IN9
+Dat_binario[2] => Mux2.IN9
+Dat_binario[2] => Mux3.IN9
+Dat_binario[3] => Mux0.IN8
+Dat_binario[3] => Mux1.IN8
+Dat_binario[3] => Mux2.IN8
+Dat_binario[3] => Mux3.IN8
+Decenas[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Decenas[1] <= <GND>
+Decenas[2] <= <GND>
+Decenas[3] <= <GND>
+Unidades[0] <= Dat_binario[0].DB_MAX_OUTPUT_PORT_TYPE
+Unidades[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Unidades[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Unidades[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_BINARIO_BCD:BINARIO_A_BCD_2
+Dat_binario[0] => Unidades[0].DATAIN
+Dat_binario[1] => Mux0.IN10
+Dat_binario[1] => Mux1.IN10
+Dat_binario[1] => Mux2.IN10
+Dat_binario[1] => Mux3.IN10
+Dat_binario[2] => Mux0.IN9
+Dat_binario[2] => Mux1.IN9
+Dat_binario[2] => Mux2.IN9
+Dat_binario[2] => Mux3.IN9
+Dat_binario[3] => Mux0.IN8
+Dat_binario[3] => Mux1.IN8
+Dat_binario[3] => Mux2.IN8
+Dat_binario[3] => Mux3.IN8
+Decenas[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Decenas[1] <= <GND>
+Decenas[2] <= <GND>
+Decenas[3] <= <GND>
+Unidades[0] <= Dat_binario[0].DB_MAX_OUTPUT_PORT_TYPE
+Unidades[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Unidades[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Unidades[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_7SEG:VELOCIDAD_DECENAS
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+seg7[0] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_7SEG:VELOCIDAD_UNIDADES
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+seg7[0] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_7SEG:ACIERTOS_DECENAS
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+seg7[0] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BLOQUE_REFLEJOS_HUMANOS|REFLEJOS_HUMANOS:inst|DECODER_7SEG:ACIERTOS_UNIDADES
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+apaga => seg7.OUTPUTSELECT
+seg7[0] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= seg7.DB_MAX_OUTPUT_PORT_TYPE
+
+
